@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paws & Claws Pet Medical Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Paws & Claws</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <h2>Caring for Your Pets, Always</h2>
+        <p>Your trusted partner in pet health and happiness.</p>
+        <a href="#appointment" class="btn">Book an Appointment</a>
+      </div>
+      <img src="images/hero-pet.svg" alt="Happy pet illustration">
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        At Paws & Claws, our dedicated team of veterinarians and pet lovers provide compassionate, expert care to keep your furry friends healthy and happy. Whether it’s a routine checkup, vaccination, or emergency care, we’re here to help your pets thrive.
+      </p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>
+          <img src="images/vaccine.svg" alt="Vaccination icon">
+          <h3>Vaccinations</h3>
+          <p>Protect your pets from common diseases with our safe and effective vaccine programs.</p>
+        </li>
+        <li>
+          <img src="images/checkup.svg" alt="Checkup icon">
+          <h3>Routine Checkups</h3>
+          <p>Comprehensive health assessments to catch issues early and ensure wellbeing.</p>
+        </li>
+        <li>
+          <img src="images/emergency.svg" alt="Emergency care icon">
+          <h3>Emergency Care</h3>
+          <p>Fast, responsive care when your pet needs it most—24/7 on-call support.</p>
+        </li>
+        <li>
+          <img src="images/dental.svg" alt="Dental care icon">
+          <h3>Dental Care</h3>
+          <p>Keep your pet’s teeth healthy and strong with our dental cleaning and exams.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="appointment">
+      <h2>Book an Appointment</h2>
+      <form id="booking-form" action="https://formspree.io/f/mjkonyzp" method="POST">
+        <label for="pet-name">Pet's Name<span>*</span></label>
+        <input type="text" id="pet-name" name="Pet Name" required>
+        <label for="owner-name">Your Name<span>*</span></label>
+        <input type="text" id="owner-name" name="Owner Name" required>
+        <label for="email">Email<span>*</span></label>
+        <input type="email" id="email" name="Email" required>
+        <label for="service">Service<span>*</span></label>
+        <select id="service" name="Service" required>
+          <option value="">Select a service</option>
+          <option>Vaccinations</option>
+          <option>Routine Checkup</option>
+          <option>Emergency Care</option>
+          <option>Dental Care</option>
+        </select>
+        <label for="date">Preferred Date<span>*</span></label>
+        <input type="date" id="date" name="Preferred Date" required>
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="Message"></textarea>
+        <button type="submit" class="btn">Book Now</button>
+        <p id="form-msg"></p>
+      </form>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📍 123 Pet Street, Happyville, Country</p>
+      <p>📞 <a href="tel:+1234567890">+1 234-567-890</a></p>
+      <p>✉️ <a href="mailto:info@pawsandclaws.com">info@pawsandclaws.com</a></p>
+      <div class="socials">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Paws & Claws Pet Medical Care. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
