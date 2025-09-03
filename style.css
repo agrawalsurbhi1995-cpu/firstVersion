@@ -137,11 +137,6 @@ body {
   transition: background 0.3s;
 }
 
-.btn-primary:hover {
-  background: #e68a00;
-}
-
-
 .hero-img {
   width: 100%;
   height: 500px;
