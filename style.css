@@ -166,23 +166,44 @@ body {
   margin-top: 15px;
 }
 
-.hero-kpis {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
-  z-index: 2;
-}
+    
+    .stats-section {
+      background-color: #0077cc; /* Blue background */
+      color: white;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
 
-.kpi {
-  background: rgba(0,0,0,0.6);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-}
+    .stat {
+      flex: 1;
+    }
+
+    .stat h2 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .stat p {
+      font-size: 16px;
+      margin: 8px 0 0;
+    }
+
+    .star {
+      color: gold;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .stats-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  
 
 /* About Us */
 .about {
