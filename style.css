@@ -77,7 +77,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url('hero.jpeg') center/cover no-repeat;
+  background: url('hero.jpg') center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
