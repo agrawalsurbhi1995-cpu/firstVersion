@@ -3,234 +3,283 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
   background: #fff;
-  color: #333;
+  color: #222;
 }
 
-/* Header */
-header {
-  background: #fff;
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.hero {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  background: linear-gradient(90deg, #f9fafb 60%, #fff 100%);
+  padding: 60px 0 50px 0;
+  min-height: 480px;
+
+  .hero-content {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 3.5rem;
+      color: #f97316;
+      margin: 0 0 12px 0;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      margin-bottom: 28px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 42px;
+      background: #0ea5e9;
+      color: #fff;
+      border-radius: 32px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+      &:hover {
+        background: #f97316;
+      }
+    }
+  }
+
+  .hero-img-kpis {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero-img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 0 6px 26px rgba(0,0,0,0.11);
+      margin-bottom: 32px;
+      border: 6px solid #fff;
+      background: #eee;
+    }
+    .hero-kpis {
+      display: flex;
+      justify-content: center;
+      gap: 38px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 20px rgba(0,0,0,0.09);
+      padding: 18px 40px;
+      border-radius: 26px;
+
+      .kpi {
+        text-align: center;
+        h2 {
+          color: #0ea5e9;
+          font-size: 2.1rem;
+          margin: 0 0 4px 0;
+          font-family: 'Nunito', sans-serif;
+        }
+        p {
+          color: #f97316;
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
-header h1 {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.8rem;
-  color: #f97316;
-  letter-spacing: 2px;
-}
-
-header h1 span {
-  color: #0ea5e9;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: #f97316;
-}
-
-/* Hero */
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  background: url('https://placekitten.com/1200/500') center/cover no-repeat;
-  text-align: center;
-  color: #fff;
-}
-
-.hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  font-family: 'Nunito', sans-serif;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-}
-
-.hero p {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-}
-
-.hero a button {
-  padding: 14px 28px;
-  font-size: 1.1rem;
-  background: #f97316;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.hero a button:hover {
-  background: #0ea5e9;
-}
-
-/* KPIs Billboard */
-.kpis {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
-  background: rgba(255,255,255,0.9);
-  padding: 15px 30px;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
-
-.kpi {
-  text-align: center;
-}
-
-.kpi h3 {
-  font-size: 1.6rem;
-  margin: 0;
-  color: #0ea5e9;
-  font-family: 'Nunito', sans-serif;
-}
-
-/* Sections */
 .about, .services, .testimonials, .appointment, .contact {
-  padding: 70px 20px;
+  padding: 60px 10vw;
   text-align: center;
 }
 
 .about h2, .services h2, .testimonials h2, .appointment h2, .contact h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 2.2rem;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   color: #f97316;
 }
 
 .about p {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   font-size: 1.1rem;
   color: #555;
 }
 
-/* Services */
+// Services - Make horizontal
 .services {
   background: #f9fafb;
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border-radius: 18px;
+    padding: 22px 18px 28px 18px;
+    transition: box-shadow 0.2s;
+    width: 250px;
+    min-width: 220px;
+    max-width: 270px;
+    &:hover {
+      box-shadow: 0 7px 25px rgba(0,0,0,0.13);
+    }
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+    h3 {
+      color: #0ea5e9;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
 }
 
-.service-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.service-item {
-  padding: 20px;
-  border: 1px solid #eee;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.service-item:hover {
-  transform: translateY(-5px);
-}
-
-.service-item img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.service-item h3 {
-  margin-bottom: 10px;
-  color: #0ea5e9;
-  font-family: 'Nunito', sans-serif;
-}
-
-.service-item p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Testimonials */
+// Testimonials
 .testimonials {
   background: #fff;
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-style: italic;
+    font-size: 1.08rem;
+    color: #444;
+    background: #f9fafb;
+    padding: 22px 30px 16px 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    h4 {
+      margin-top: 14px;
+      color: #0ea5e9;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
 }
 
-.testimonial-item {
-  margin-bottom: 30px;
-  font-style: italic;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.testimonial-item span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Appointment Form */
+// Appointment Form
 .appointment {
   background: #f9fafb;
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+
+    input, select {
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button[type='submit'] {
+      padding: 14px;
+      background: #f97316;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: background 0.3s;
+      &:hover {
+        background: #0ea5e9;
+      }
+    }
+  }
 }
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: grid;
-  gap: 15px;
-}
-
-input, select {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  width: 100%;
-}
-
-button.submit-btn {
-  padding: 14px;
-  background: #f97316;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: 0.3s;
-}
-
-button.submit-btn:hover {
-  background: #0ea5e9;
-}
-
-/* Contact */
+// Contact
 .contact p {
   font-size: 1.1rem;
   color: #555;
   margin: 5px 0;
+}
+
+footer {
+  background: #0ea5e9;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+// Responsive
+@media (max-width: 1100px) {
+  .services .service-list {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 0 30px 0;
+
+    .hero-content {
+      align-items: center;
+      padding-left: 0;
+      text-align: center;
+    }
+    .hero-img-kpis {
+      .hero-img {
+        width: 220px;
+        height: 220px;
+      }
+      .hero-kpis {
+        gap: 18px;
+        padding: 13px 14px;
+      }
+    }
+  }
+  .about, .services, .testimonials, .appointment, .contact {
+    padding: 40px 2vw;
+  }
+  .services .service-card {
+    min-width: 160px;
+    max-width: 220px;
+    padding: 14px 8px 18px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .services .service-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .services .service-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
 }
