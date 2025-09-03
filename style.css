@@ -213,7 +213,7 @@ body {
   color: #ff914d;
 }
 
- .features-section {
+.features-section {
       padding: 60px 20px;
       text-align: center;
     }
@@ -221,7 +221,7 @@ body {
     .features-section h2 {
       font-size: 32px;
       font-weight: bold;
-      color: #003366; /* Deep blue */
+      color: #ff6600; /* Heading in Orange */
       margin-bottom: 40px;
     }
 
@@ -248,14 +248,14 @@ body {
 
     .feature-icon {
       font-size: 36px;
-      color: #ff6600; /* Orange */
+      color: #0077cc; /* Blue for icons */
       margin-bottom: 15px;
     }
 
     .feature-card h3 {
       font-size: 20px;
       margin: 10px 0;
-      color: #003366;
+      color: #ff6600; /* Subheadings in Orange */
     }
 
     .feature-card p {
@@ -263,7 +263,6 @@ body {
       color: #555;
       margin: 0;
     }
-
 
 
 /* Services */
