@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ZUPAWS – Pet Medicare</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans&display=swap');
-
-
-body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
-header { background: #fff; padding: 20px 40px; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
-header h1 { margin: 0; font-family: 'Nunito', sans-serif; font-size: 1.8rem; color: #f97316; letter-spacing: 2px; }
-header h1 span { color: #0ea5e9; }
-nav a { margin: 0 12px; text-decoration: none; color: #333; font-weight: 500; }
-nav a:hover { color: #f97316; }
-
-
-.hero { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 100px 20px; background: url('https://placekitten.com/1200/500') center/cover no-repeat; text-align: center; color: #fff; }
-.hero h2 { font-size: 2.8rem; margin-bottom: 10px; font-family: 'Nunito', sans-serif; color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
-.hero p { margin-bottom: 20px; font-size: 1.2rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
-.hero a button { padding: 14px 28px; font-size: 1.1rem; background: #f97316; color: #fff; border: none; border-radius: 30px; cursor: pointer; transition: 0.3s; }
-.hero a button:hover { background: #0ea5e9; }
-
-
-.kpis { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 40px; background: rgba(255,255,255,0.9); padding: 15px 30px; border-radius: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-.kpi { text-align: center; }
-.kpi h3 { font-size: 1.6rem; margin: 0; color: #0ea5e9; font-family: 'Nunito', sans-serif; }
-
-
-.about, .services, .testimonials, .appointment, .contact { padding: 70px 20px; text-align: center; }
-.about h2, .services h2, .testimonials h2, .appointment h2, .contact h2 { font-family: 'Nunito', sans-serif; font-size: 2.2rem; margin-bottom: 25px; color: #f97316; }
-.about p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555; }
-
-
-.services { background: #f9fafb; }
-.service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-.service-item { padding: 20px; border: 1px solid #eee; border-radius: 20px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: 0.3s; }
-.service-item:hover { transform: translateY(-5px); }
-.service-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: 15px; }
-.service-item h3 { margin-bottom: 10px; color: #0ea5e9; font-family: 'Nunito', sans-serif; }
-.service-item p { font-size: 0.95rem; color: #555; }
-
-
-.testimonials { background: #fff; }
-.testimonial-item { margin-bottom: 30px; font-style: italic; max-width: 700px; margin-left: auto; margin-right: auto; }
-.testimonial-item span { display: block; margin-top: 10px; font-weight: bold; color: #333; }
-
-
-.appointment { background: #f9fafb; }
-form { max-width: 600px; margin: 0 auto; display: grid; gap: 15px; }
-input, select { padding: 12px; border: 1px solid #ccc; border-radius: 12px; width: 100%; }
-button.submit-btn { padding: 14px; background: #f97316; color: #fff; border: none; border-radius: 30px; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
-button.submit-btn:hover { background: #0ea5e9; }
-
-
-.contact p { font-size: 1.1rem; color: #555; margin: 5px 0; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZUPAWS – Pet Medicare</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>ZU<span>PAWS</span></h1>
-<nav>
-<a href="#about">About Us</a>
-<a href="#services">Services</a>
-<a href="#testimonials">Testimonials</a>
-<a href="#appointment">Book</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>ZU<span>PAWS</span></h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#appointment">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>ZUPAWS – Compassionate Healthcare for Pets</h2>
+    <p>Caring Paws, Trusted Care</p>
+    <a href="#appointment"><button>Book Appointment</button></a>
+    <div class="kpis">
+      <div class="kpi"><h3>500+</h3><p>Customers</p></div>
+      <div class="kpi"><h3>1000+</h3><p>Visits</p></div>
+      <div class="kpi"><h3>50+</h3><p>Veterinarians</p></div>
+    </div>
+  </section>
 
-<section class="hero">
+  <!-- About Us -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>At ZUPAWS, we are committed to delivering top-quality healthcare for your pets. With a team of experienced veterinarians and state-of-the-art facilities, we ensure your furry friends receive compassionate and professional care.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <img src="assets/vaccination.jpg" alt="Vaccination">
+        <h3>Vaccination</h3>
+        <p>Protect your pets from harmful diseases with our safe and effective vaccination programs.</p>
+      </div>
+      <div class="service-item">
+        <img src="assets/medication.jpg" alt="Medication Providing">
+        <h3>Medication Providing</h3>
+        <p>We provide timely access to prescribed medicines and supplements.</p>
+      </div>
+      <div class="service-item">
+        <img src="assets/diagnosis.jpg" alt="Diagnosis">
+        <h3>Diagnosis</h3>
+        <p>Comprehensive diagnostic tools and health checkups for early treatment.</p>
+      </div>
+      <div class="service-item">
+        <img src="assets/consultation.jpg" alt="Consultation">
+        <h3>Consultation</h3>
+        <p>Get expert veterinary advice on nutrition, preventive care, and treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-item">
+      <p>“ZUPAWS has been a lifesaver for my Labrador. The vets are compassionate and professional.”</p>
+      <span>— Rohan Mehta</span>
+    </div>
+    <div class="testimonial-item">
+      <p>“Quick diagnosis and treatment for my cat. Highly recommend ZUPAWS!”</p>
+      <span>— Aditi Sharma</span>
+    </div>
+    <div class="testimonial-item">
+      <p>“Great service and caring staff. My dog enjoys visiting the clinic now.”</p>
+      <span>— Arjun Patel</span>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section class="appointment" id="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone" required />
+      <input type="text" placeholder="Full Address" required />
+      <select required>
+        <option value="">Select Service</option>
+        <option value="Vaccination">Vaccination</option>
+        <option value="Medication Providing">Medication Providing</option>
+        <option value="Diagnosis">Diagnosis</option>
+        <option value="Consultation">Consultation</option>
+      </select>
+      <input type="datetime-local" required />
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: nikhil.m@zupaws.in</p>
+    <p>Phone: +91 7982690813</p>
+    <p>Address: Sector 57, Gurugram, Haryana, India</p>
+  </section>
+</body>
 </html>
