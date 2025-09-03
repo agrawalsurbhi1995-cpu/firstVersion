@@ -1,103 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ZUPAWS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ZUPAWS – Pet Medicare</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans&display=swap');
+
+
+body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+header { background: #fff; padding: 20px 40px; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+header h1 { margin: 0; font-family: 'Nunito', sans-serif; font-size: 1.8rem; color: #f97316; letter-spacing: 2px; }
+header h1 span { color: #0ea5e9; }
+nav a { margin: 0 12px; text-decoration: none; color: #333; font-weight: 500; }
+nav a:hover { color: #f97316; }
+
+
+.hero { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 100px 20px; background: url('https://placekitten.com/1200/500') center/cover no-repeat; text-align: center; color: #fff; }
+.hero h2 { font-size: 2.8rem; margin-bottom: 10px; font-family: 'Nunito', sans-serif; color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+.hero p { margin-bottom: 20px; font-size: 1.2rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+.hero a button { padding: 14px 28px; font-size: 1.1rem; background: #f97316; color: #fff; border: none; border-radius: 30px; cursor: pointer; transition: 0.3s; }
+.hero a button:hover { background: #0ea5e9; }
+
+
+.kpis { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 40px; background: rgba(255,255,255,0.9); padding: 15px 30px; border-radius: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+.kpi { text-align: center; }
+.kpi h3 { font-size: 1.6rem; margin: 0; color: #0ea5e9; font-family: 'Nunito', sans-serif; }
+
+
+.about, .services, .testimonials, .appointment, .contact { padding: 70px 20px; text-align: center; }
+.about h2, .services h2, .testimonials h2, .appointment h2, .contact h2 { font-family: 'Nunito', sans-serif; font-size: 2.2rem; margin-bottom: 25px; color: #f97316; }
+.about p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555; }
+
+
+.services { background: #f9fafb; }
+.service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.service-item { padding: 20px; border: 1px solid #eee; border-radius: 20px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: 0.3s; }
+.service-item:hover { transform: translateY(-5px); }
+.service-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: 15px; }
+.service-item h3 { margin-bottom: 10px; color: #0ea5e9; font-family: 'Nunito', sans-serif; }
+.service-item p { font-size: 0.95rem; color: #555; }
+
+
+.testimonials { background: #fff; }
+.testimonial-item { margin-bottom: 30px; font-style: italic; max-width: 700px; margin-left: auto; margin-right: auto; }
+.testimonial-item span { display: block; margin-top: 10px; font-weight: bold; color: #333; }
+
+
+.appointment { background: #f9fafb; }
+form { max-width: 600px; margin: 0 auto; display: grid; gap: 15px; }
+input, select { padding: 12px; border: 1px solid #ccc; border-radius: 12px; width: 100%; }
+button.submit-btn { padding: 14px; background: #f97316; color: #fff; border: none; border-radius: 30px; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+button.submit-btn:hover { background: #0ea5e9; }
+
+
+.contact p { font-size: 1.1rem; color: #555; margin: 5px 0; }
+</style>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>ZUPAWS</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#appointment">Book Appointment</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="hero">
-      <div>
-        <h2>Caring for Your Pets, Always</h2>
-        <p>Your trusted partner in pet health and happiness.</p>
-        <a href="#appointment" class="btn">Book an Appointment</a>
-      </div>
-      <img src="images/hero-pet.svg" alt="Happy pet illustration">
-    </section>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>
-        At ZUPAWS, our dedicated team of veterinarians and pet lovers provide compassionate, expert care to keep your furry friends healthy and happy. Whether it’s a routine checkup, vaccination, or emergency care, we’re here to help your pets thrive.
-      </p>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul class="services-list">
-        <li>
-          <img src="images/vaccine.svg" alt="Vaccination icon">
-          <h3>Vaccinations</h3>
-          <p>Protect your pets from common diseases with our safe and effective vaccine programs.</p>
-        </li>
-        <li>
-          <img src="images/checkup.svg" alt="Checkup icon">
-          <h3>Routine Checkups</h3>
-          <p>Comprehensive health assessments to catch issues early and ensure wellbeing.</p>
-        </li>
-        <li>
-          <img src="images/emergency.svg" alt="Emergency care icon">
-          <h3>Emergency Care</h3>
-          <p>Fast, responsive care when your pet needs it most—24/7 on-call support.</p>
-        </li>
-        <li>
-          <img src="images/dental.svg" alt="Dental care icon">
-          <h3>Dental Care</h3>
-          <p>Keep your pet’s teeth healthy and strong with our dental cleaning and exams.</p>
-        </li>
-      </ul>
-    </section>
-    <section id="appointment">
-      <h2>Book an Appointment</h2>
-      <form id="booking-form" action="https://formspree.io/f/mjkonyzp" method="POST">
-        <label for="pet-name">Pet's Name<span>*</span></label>
-        <input type="text" id="pet-name" name="Pet Name" required>
-        <label for="owner-name">Your Name<span>*</span></label>
-        <input type="text" id="owner-name" name="Owner Name" required>
-        <label for="email">Email<span>*</span></label>
-        <input type="email" id="email" name="Email" required>
-        <label for="service">Service<span>*</span></label>
-        <select id="service" name="Service" required>
-          <option value="">Select a service</option>
-          <option>Vaccinations</option>
-          <option>Routine Checkup</option>
-          <option>Emergency Care</option>
-          <option>Dental Care</option>
-        </select>
-        <label for="date">Preferred Date<span>*</span></label>
-        <input type="date" id="date" name="Preferred Date" required>
-        <label for="message">Additional Notes</label>
-        <textarea id="message" name="Message"></textarea>
-        <button type="submit" class="btn">Book Now</button>
-        <p id="form-msg"></p>
-      </form>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Sector 57, Gurugram, Haryana, Inida</p>
-      <p>📞 <a href="tel:7982690813">7982690813</a></p>
-      <p>✉️ <a href="mailto:nikhil.m@zupaws.in">nikhil.m@zupaws.in</a></p>
-      <div class="socials">
-        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 ZUPAWS Pet Medical Care. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+<header>
+<h1>ZU<span>PAWS</span></h1>
+<nav>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#appointment">Book</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<section class="hero">
 </html>
