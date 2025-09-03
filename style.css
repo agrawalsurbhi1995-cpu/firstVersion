@@ -141,12 +141,6 @@ body {
   background: #e68a00;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-  background: #222;
-}
 
 .hero-img {
   width: 100%;
@@ -155,18 +149,6 @@ body {
   opacity: 0.6;
 }
 
-.hero-content {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: #ff914d;
-}
 
 .hero .tagline {
   font-size: 1.2rem;
