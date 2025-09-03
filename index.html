@@ -1,112 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZUPAWS – Pet Medicare</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUPAWS - Pet Medicare</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>ZU<span>PAWS</span></h1>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#appointment">Book</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>ZUPAWS</h1>
+      <p class="tagline">Caring Paws, Trusted Care</p>
+      <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+    <div class="hero-kpis">
+      <div class="kpi"><h2>500+</h2><p>Happy Customers</p></div>
+      <div class="kpi"><h2>1000+</h2><p>Visits</p></div>
+      <div class="kpi"><h2>50+</h2><p>Veterinarian Team</p></div>
+    </div>
+    <img src="hero.jpg" alt="Pet and Doctor" class="hero-img">
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>ZUPAWS – Compassionate Healthcare for Pets</h2>
-    <p>Caring Paws, Trusted Care</p>
-    <a href="#appointment"><button>Book Appointment</button></a>
-    <div class="kpis">
-      <div class="kpi"><h3>500+</h3><p>Customers</p></div>
-      <div class="kpi"><h3>1000+</h3><p>Visits</p></div>
-      <div class="kpi"><h3>50+</h3><p>Veterinarians</p></div>
-    </div>
-  </section>
-
   <!-- About Us -->
-  <section class="about" id="about">
+  <section class="about">
     <h2>About Us</h2>
-    <p>At ZUPAWS, we are committed to delivering top-quality healthcare for your pets. With a team of experienced veterinarians and state-of-the-art facilities, we ensure your furry friends receive compassionate and professional care.</p>
+    <p>
+      At <strong>ZUPAWS</strong>, we are dedicated to delivering quality pet healthcare with compassion and expertise. 
+      Our team of experienced veterinarians and staff ensure your pets receive the best care possible — from vaccinations 
+      to diagnosis and ongoing treatment. We aim to build a healthier and happier future for your furry friends.
+    </p>
   </section>
 
-  <!-- Services -->
-  <section class="services" id="services">
+  <!-- Our Services -->
+  <section class="services">
     <h2>Our Services</h2>
     <div class="service-list">
-      <div class="service-item">
-        <img src="assets/vaccination.jpg" alt="Vaccination">
+      <div class="service-card">
+        <img src="vaccination.jpg" alt="Vaccination">
         <h3>Vaccination</h3>
-        <p>Protect your pets from harmful diseases with our safe and effective vaccination programs.</p>
+        <p>Protect your pets with timely and safe vaccinations to prevent common diseases.</p>
       </div>
-      <div class="service-item">
-        <img src="assets/medication.jpg" alt="Medication Providing">
+      <div class="service-card">
+        <img src="medication.jpg" alt="Medication">
         <h3>Medication Providing</h3>
-        <p>We provide timely access to prescribed medicines and supplements.</p>
+        <p>Reliable access to prescribed medicines for effective and quick recovery.</p>
       </div>
-      <div class="service-item">
-        <img src="assets/diagnosis.jpg" alt="Diagnosis">
+      <div class="service-card">
+        <img src="diagnosis.jpg" alt="Diagnosis">
         <h3>Diagnosis</h3>
-        <p>Comprehensive diagnostic tools and health checkups for early treatment.</p>
+        <p>Advanced diagnostic facilities to detect health issues early and accurately.</p>
       </div>
-      <div class="service-item">
-        <img src="assets/consultation.jpg" alt="Consultation">
+      <div class="service-card">
+        <img src="consultation.jpg" alt="Consultation">
         <h3>Consultation</h3>
-        <p>Get expert veterinary advice on nutrition, preventive care, and treatments.</p>
+        <p>Expert advice from our veterinarians to guide you in caring for your pets.</p>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-item">
-      <p>“ZUPAWS has been a lifesaver for my Labrador. The vets are compassionate and professional.”</p>
-      <span>— Rohan Mehta</span>
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"ZUPAWS has been a blessing for my dog’s health. The vets are kind and very professional!"</p>
+      <h4>- Meera S.</h4>
     </div>
-    <div class="testimonial-item">
-      <p>“Quick diagnosis and treatment for my cat. Highly recommend ZUPAWS!”</p>
-      <span>— Aditi Sharma</span>
+    <div class="testimonial">
+      <p>"Best pet care service in Gurugram. They treated my cat with so much love and care."</p>
+      <h4>- Rohan K.</h4>
     </div>
-    <div class="testimonial-item">
-      <p>“Great service and caring staff. My dog enjoys visiting the clinic now.”</p>
-      <span>— Arjun Patel</span>
+    <div class="testimonial">
+      <p>"Affordable, reliable, and trustworthy. I won’t go anywhere else for my pet’s care."</p>
+      <h4>- Anjali P.</h4>
     </div>
   </section>
 
   <!-- Appointment Form -->
-  <section class="appointment" id="appointment">
+  <section id="appointment" class="appointment">
     <h2>Book an Appointment</h2>
     <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Phone" required />
-      <input type="text" placeholder="Full Address" required />
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone" required>
+      <input type="text" placeholder="Full Address" required>
       <select required>
         <option value="">Select Service</option>
-        <option value="Vaccination">Vaccination</option>
-        <option value="Medication Providing">Medication Providing</option>
-        <option value="Diagnosis">Diagnosis</option>
-        <option value="Consultation">Consultation</option>
+        <option value="vaccination">Vaccination</option>
+        <option value="medication">Medication Providing</option>
+        <option value="diagnosis">Diagnosis</option>
+        <option value="consultation">Consultation</option>
       </select>
-      <input type="datetime-local" required />
-      <button type="submit" class="submit-btn">Submit</button>
+      <input type="datetime-local" required>
+      <button type="submit">Submit</button>
     </form>
   </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
+  <!-- Contact Us -->
+  <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: nikhil.m@zupaws.in</p>
-    <p>Phone: +91 7982690813</p>
+    <p>Email: <a href="mailto:nikhil.m@zupaws.in">nikhil.m@zupaws.in</a></p>
+    <p>Phone: <a href="tel:7982690813">7982690813</a></p>
     <p>Address: Sector 57, Gurugram, Haryana, India</p>
   </section>
+
+  <footer>
+    <p>© 2025 ZUPAWS. All rights reserved.</p>
+  </footer>
 </body>
 </html>
