@@ -1,92 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans&display=swap');
+
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
 }
 
 .hero {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  background: url('hero.jpg') no-repeat center center/cover;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  background: linear-gradient(90deg, #f9fafb 60%, #fff 100%);
+  padding: 60px 0 50px 0;
+  min-height: 480px;
+
+  .hero-content {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 3.5rem;
+      color: #f97316;
+      margin: 0 0 12px 0;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      margin-bottom: 28px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 42px;
+      background: #0ea5e9;
+      color: #fff;
+      border-radius: 32px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+      &:hover {
+        background: #f97316;
+      }
+    }
+  }
+
+  .hero-img-kpis {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero-img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 0 6px 26px rgba(0,0,0,0.11);
+      margin-bottom: 32px;
+      border: 6px solid #fff;
+      background: #eee;
+    }
+    .hero-kpis {
+      display: flex;
+      justify-content: center;
+      gap: 38px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 20px rgba(0,0,0,0.09);
+      padding: 18px 40px;
+      border-radius: 26px;
+
+      .kpi {
+        text-align: center;
+        h2 {
+          color: #0ea5e9;
+          font-size: 2.1rem;
+          margin: 0 0 4px 0;
+          font-family: 'Nunito', sans-serif;
+        }
+        p {
+          color: #f97316;
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
-.hero .overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.45);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.kpis {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.kpi {
-  background: rgba(255,255,255,0.12);
-  border-radius: 10px;
-  padding: 1.2rem 2.5rem;
+.about, .services, .testimonials, .appointment, .contact {
+  padding: 60px 10vw;
   text-align: center;
-  color: #fff;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-  min-width: 120px;
 }
 
-.kpi-value {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: bold;
+.about h2, .services h2, .testimonials h2, .appointment h2, .contact h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  color: #f97316;
 }
 
-.kpi-label {
-  display: block;
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
   font-size: 1.1rem;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
+  color: #555;
 }
 
-.book-btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  font-size: 1.3rem;
-  font-weight: 600;
+// Services - Make horizontal
+.services {
+  background: #f9fafb;
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border-radius: 18px;
+    padding: 22px 18px 28px 18px;
+    transition: box-shadow 0.2s;
+    width: 250px;
+    min-width: 220px;
+    max-width: 270px;
+    &:hover {
+      box-shadow: 0 7px 25px rgba(0,0,0,0.13);
+    }
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+    h3 {
+      color: #0ea5e9;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+}
+
+// Testimonials
+.testimonials {
+  background: #fff;
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-style: italic;
+    font-size: 1.08rem;
+    color: #444;
+    background: #f9fafb;
+    padding: 22px 30px 16px 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    h4 {
+      margin-top: 14px;
+      color: #0ea5e9;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+}
+
+// Appointment Form
+.appointment {
+  background: #f9fafb;
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+
+    input, select {
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button[type='submit'] {
+      padding: 14px;
+      background: #f97316;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: background 0.3s;
+      &:hover {
+        background: #0ea5e9;
+      }
+    }
+  }
+}
+
+// Contact
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+footer {
+  background: #0ea5e9;
   color: #fff;
-  background: #2ea44f;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.17);
-  transition: background 0.2s;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 1rem;
+  margin-top: 0;
 }
 
-.book-btn:hover {
-  background: #218838;
+// Responsive
+@media (max-width: 1100px) {
+  .services .service-list {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
 }
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .hero {
-    height: 60vh;
+    flex-direction: column;
+    padding: 40px 0 30px 0;
+
+    .hero-content {
+      align-items: center;
+      padding-left: 0;
+      text-align: center;
+    }
+    .hero-img-kpis {
+      .hero-img {
+        width: 220px;
+        height: 220px;
+      }
+      .hero-kpis {
+        gap: 18px;
+        padding: 13px 14px;
+      }
+    }
   }
-  .kpis {
-    gap: 1.2rem;
+  .about, .services, .testimonials, .appointment, .contact {
+    padding: 40px 2vw;
   }
-  .kpi {
-    padding: 0.7rem 1.3rem;
-    min-width: 80px;
+  .services .service-card {
+    min-width: 160px;
+    max-width: 220px;
+    padding: 14px 8px 18px 8px;
   }
-  .kpi-value {
-    font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
-  .book-btn {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
+  .services .service-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .services .service-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 }
