@@ -255,6 +255,7 @@ body {
 
 
 /* Testimonials Section */
+/* Testimonials Section */
 .testimonials {
   background: #fff7f0;
   padding: 60px 20px;
@@ -268,14 +269,31 @@ body {
   margin-bottom: 40px;
 }
 
-/* Swiper Cards */
+/* Swiper container fix */
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+
+/* Testimonial Card */
 .testimonial-card {
   background: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
   padding: 25px;
-  max-width: 500px;
-  margin: auto;
+  width: 100%;
+  max-width: 380px;
   text-align: left;
 }
 
