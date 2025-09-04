@@ -252,22 +252,88 @@ body {
   color: #ffcc00;
 }
 
-/* Testimonials */
+
+
+/* Testimonials Section */
 .testimonials {
-  padding: 50px 20px;
-  background: #fff8f2;
+  background: #fff7f0;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .testimonials h2 {
-  color: #ff914d;
-  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #004466;
+  margin-bottom: 40px;
 }
 
-.testimonial {
-  margin-bottom: 20px;
-  font-style: italic;
+/* Swiper Cards */
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
 }
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  background: #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.recommends {
+  color: #007b33;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.review {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.city {
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: #004466;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff6600;
+  opacity: 1;
+}
+
 
 /* Comparison */
 .comparison {
