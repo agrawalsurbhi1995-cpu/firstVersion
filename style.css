@@ -555,7 +555,7 @@ form button {
 
 .footer-logo {
   flex: 1;
-  max-width: 50%;
+  max-width: 33%;
 }
 
 .footer-logo img {
@@ -569,14 +569,16 @@ form button {
   margin: 0;
 }
 
+/* Center CTA */
 .footer-cta {
   flex: 1;
-  max-width: 50%;
+  max-width: 33%;
   text-align: center;
+  margin: 0 auto; /* ensures center alignment */
 }
 
 .footer-cta h3 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   margin-bottom: 20px;
 }
