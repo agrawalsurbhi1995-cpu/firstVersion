@@ -17,10 +17,10 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#comparison">Comparison</a></li>
-          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#appointment" class="btn">Book Now</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -31,32 +31,32 @@
     <div class="container hero-content">
       <h2>Your Pet’s Health, Our Priority</h2>
       <p>Vet consultations, vaccinations, diagnostics, and medicine delivery — all at your doorstep.</p>
-      <a href="#pricing" class="btn">Book Now</a>
+      <a href="#appointment" class="btn">Book Now</a>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="stats">
     <div class="stat">
-      <h3>20,000+</h3>
-      <p>Happy Families</p>
+      <h2>20,000+</h2>
+      <p>Happy families</p>
     </div>
     <div class="stat">
-      <h3>50+</h3>
+      <h2>50+</h2>
       <p>Doctors</p>
     </div>
     <div class="stat">
-      <h3>30 mins</h3>
-      <p>Avg. Consultation</p>
+      <h2>30 mins</h2>
+      <p>Average consultation duration</p>
     </div>
     <div class="stat">
-      <h3>4.9 <span class="star">★</span></h3>
-      <p>Google Rating</p>
+      <h2>4.9 <span class="star">★</span></h2>
+      <p>Google rating</p>
     </div>
   </section>
 
   <!-- Why Choose Us -->
   <section id="why" class="features-section">
+  
     <h2>Why choose Zupaws?</h2>
     <div class="features-grid">
       <div class="feature-card">
@@ -87,6 +87,50 @@
     </div>
   </section>
 
+  <!-- Our Services -->
+  <section id="service" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <img src="vaccination.jpeg" alt="Vaccination">
+        <h3>Vaccination</h3>
+        <p>Protect your pets with timely and safe vaccinations to prevent common diseases.</p>
+      </div>
+      <div class="service-card">
+        <img src="medication.jpg" alt="Medication">
+        <h3>Medication Providing</h3>
+        <p>Reliable access to prescribed medicines for effective and quick recovery.</p>
+      </div>
+      <div class="service-card">
+        <img src="diagnosis.jpg" alt="Diagnosis">
+        <h3>Diagnosis</h3>
+        <p>Advanced diagnostic facilities to detect health issues early and accurately.</p>
+      </div>
+      <div class="service-card">
+        <img src="diagnosis.jpeg" alt="Consultation">
+        <h3>Consultation</h3>
+        <p>Expert advice from our veterinarians to guide you in caring for your pets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"ZUPAWS has been a blessing for my dog’s health. The vets are kind and very professional!"</p>
+      <h4>- Meera S.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Best pet care service in Gurugram. They treated my cat with so much love and care."</p>
+      <h4>- Rohan K.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Affordable, reliable, and trustworthy. I won’t go anywhere else for my pet’s care."</p>
+      <h4>- Anjali P.</h4>
+    </div>
+  </section>
+  
   <!-- Pricing -->
   <section id="pricing" class="pricing-section">
     <h2>Consultation Pricing</h2>
@@ -142,24 +186,56 @@
     </table>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <button class="faq-question">Do you provide emergency services?</button>
-      <div class="faq-answer">Yes, our vets are equipped for emergencies at home.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Are your vets certified?</button>
-      <div class="faq-answer">All our veterinarians are certified professionals.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Do you offer follow-ups?</button>
-      <div class="faq-answer">Yes, follow-up visits every 2 days if required.</div>
-    </div>
+ <!-- Appointment Form -->
+  <section id="appointment" class="appointment">
+    <h2>Book an Appointment</h2>
+  <form action="https://formspree.io/f/mjkonyzp" method="POST" id="appointment-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone" required>
+      <button type="submit">Submit</button>
+    </form>
   </section>
+  
+  <!-- FAQ -->
+  <section id="faqs" class="faqs">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <button class="faq-question">How do I book a vet visit?</button>
+    <div class="faq-answer">
+      <p>You can book directly on our website by selecting service, date, and time.</p>
+    </div>
+  </div>
+  <div class="faq">
+    <button class="faq-question">Are the vets qualified?</button>
+    <div class="faq-answer">
+      <p>Yes, all Zupaws vets are licensed, verified, and highly experienced.</p>
+    </div>
+  </div>
+  <div class="faq">
+    <button class="faq-question">Do you provide emergency care?</button>
+    <div class="faq-answer">
+      <p>Yes, we provide 24/7 emergency pet care services at home.</p>
+    </div>
+  </div>
+  <div class="faq">
+    <button class="faq-question">What areas do you serve?</button>
+    <div class="faq-answer">
+      <p>Currently available in Delhi NCR & Bangalore.</p>
+    </div>
+  </div>
+ 
+<script src="script.js"></script>
+</section>
 
-  <!-- Footer -->
+ <!-- Contact Us -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:nikhil.m@zupaws.in">nikhil.m@zupaws.in</a></p>
+    <p>Phone: <a href="tel:7982690813">7982690813</a></p>
+    <p>Address: Sector 57, Gurugram, Haryana, India</p>
+  </section>
+  
+ <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Zupaws. All rights reserved.</p>
   </footer>
