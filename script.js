@@ -2,8 +2,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-  // Toggle individual FAQ
+// Toggle individual FAQ
 document.querySelectorAll(".faq-question").forEach(button => {
   button.addEventListener("click", () => {
     const faqItem = button.parentElement;
@@ -15,14 +14,17 @@ document.querySelectorAll(".faq-question").forEach(button => {
 // Toggle view more / view less
 const toggleBtn = document.getElementById("toggle-faqs");
 toggleBtn.addEventListener("click", () => {
-  const hiddenItems = document.querySelectorAll(".faq-item.hidden");
-  hiddenItems.forEach(item => {
-    item.style.display = item.style.display === "block" ? "none" : "block";
+  const extraItems = document.querySelectorAll(".faq-item.extra");
+  const isHidden = extraItems[0].style.display === "" || extraItems[0].style.display === "none";
+
+  extraItems.forEach(item => {
+    item.style.display = isHidden ? "block" : "none";
   });
 
-  toggleBtn.textContent =
-    toggleBtn.textContent === "View More" ? "View Less" : "View More";
+  toggleBtn.textContent = isHidden ? "View Less" : "View More";
 });
+
+
 
 <!-- SwiperJS CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
