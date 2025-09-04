@@ -25,7 +25,6 @@ toggleBtn.addEventListener("click", () => {
 });
 
 
-
 <!-- SwiperJS CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -50,3 +49,4 @@ toggleBtn.addEventListener("click", () => {
     }
   });
 </script>
+
