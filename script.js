@@ -24,3 +24,27 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent === "View More" ? "View Less" : "View More";
 });
 
+<!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      1024: { slidesPerView: 3 },
+      768: { slidesPerView: 2 },
+      480: { slidesPerView: 1 }
+    }
+  });
+</script>
