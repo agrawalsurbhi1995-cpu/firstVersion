@@ -50,3 +50,33 @@ toggleBtn.addEventListener("click", () => {
   });
 </script>
 
+let currentSlide = 1;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(n) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === n - 1);
+    dots[i].classList.toggle("active", i === n - 1);
+  });
+  currentSlide = n;
+}
+
+// Auto slide every 4s
+setInterval(() => {
+  currentSlide = currentSlide === slides.length ? 1 : currentSlide + 1;
+  showSlide(currentSlide);
+}, 4000);
+
+// Manual navigation
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    const n = parseInt(dot.getAttribute("data-slide"));
+    showSlide(n);
+  });
+});
+
+// Initialize first slide
+showSlide(currentSlide);
+
+
