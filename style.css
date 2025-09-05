@@ -656,7 +656,7 @@ form button {
 /* Center CTA */
 .footer-cta {
   flex: 1;
-  max-width: 33%;
+/*   max-width: 33%; */
   text-align: center;
   margin: 0 auto; /* ensures center alignment */
 }
@@ -680,9 +680,13 @@ form button {
 .footer-cta .btn:hover {
   background: #e65c00;
 }
+.footer-right {
+  padding-top: 20px;
+  text-align: right;
+}
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.2);
+/*   border-top: 1px solid rgba(255,255,255,0.2); */
   padding-top: 20px;
   text-align: center;
 }
