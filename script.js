@@ -1,5 +1,24 @@
 
+<script>
+  let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("swiper-slide");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 // Toggle individual FAQ
@@ -29,26 +48,7 @@ toggleBtn.addEventListener("click", () => {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      1024: { slidesPerView: 3 },
-      768: { slidesPerView: 2 },
-      480: { slidesPerView: 1 }
-    }
-  });
-</script>
+
 
 let currentSlide = 1;
 const slides = document.querySelectorAll(".slide");
@@ -79,4 +79,4 @@ dots.forEach(dot => {
 // Initialize first slide
 showSlide(currentSlide);
 
-
+</script
