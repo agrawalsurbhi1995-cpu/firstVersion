@@ -160,7 +160,10 @@ body {
 }
 
 .features-section h2 {
-  color: #ff6600;
+ /* color: #ff6600;*/
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff914d;
 }
 
 .features-grid {
@@ -230,9 +233,9 @@ body {
 }
 
 .doctor-screening h2 {
-  font-size: 32px;
-  color: #024e3d;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff914d;
 }
 
 .slider-nav {
@@ -305,10 +308,9 @@ body {
 }
 
 .testimonials h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #004466;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff914d;
 }
 
 /* Swiper container fix */
@@ -424,6 +426,8 @@ body {
   font-weight: 800;
   letter-spacing:.2px;
   margin:0 auto 48px;
+  margin-bottom: 30px;
+  color: #ff914d;
 }
 
 .steps{
@@ -508,7 +512,8 @@ body {
 }
 
 .appointment h2 {
-  margin-bottom: 20px;
+ font-size: 2rem;
+  margin-bottom: 30px;
   color: #ff914d;
 }
 
@@ -541,9 +546,9 @@ form button {
 }
 
 .faq-section h2 {
-  font-size: 2rem;
+ font-size: 2rem;
   margin-bottom: 30px;
-  color: #003366;
+  color: #ff914d;
 }
 
 .faq-container {
