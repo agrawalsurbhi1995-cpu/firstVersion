@@ -312,9 +312,6 @@ body {
   color: #ff914d;
 }
 
-/* Swiper container fix */
-
-/* Slideshow container */
 
 .swiper {
   width: 100%;
@@ -323,6 +320,7 @@ body {
 
 .swiper-wrapper {
   display: flex;
+  gap:20px;
 }
 
 .swiper-slide {
