@@ -302,7 +302,6 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  background: #fff7f0;
   padding: 60px 20px;
   text-align: center;
 }
@@ -399,8 +398,7 @@ body {
 .how-it-works {
   text-align: center;
   padding: 60px 20px;
-  background: #fff;
-  color: #003366; /* Dark Blue */
+   color: #003366; /* Dark Blue */
 }
 
 /* HOW IT WORKS */
@@ -484,6 +482,7 @@ body {
   font-size:1.25rem;
   font-weight:700;
   margin:6px 0 8px;
+  color: #ff914d;
 }
 
 .step p{
