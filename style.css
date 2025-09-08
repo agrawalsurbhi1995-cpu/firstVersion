@@ -90,6 +90,87 @@ body {
   }
 }
 
+/*new header*/
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.book-btn {
+  background: orange;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background: #007bff;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  flex-direction: column;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.mobile-menu a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide desktop nav */
+  }
+  .menu-icon {
+    display: block; /* show 3 dots */
+  }
+}
+
+
 
 
 /* Hero */
