@@ -3,6 +3,16 @@
   let slideIndex = 0;
 showSlides();
 
+// Mobile menu toggle
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.style.display =
+    mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("swiper-slide");
