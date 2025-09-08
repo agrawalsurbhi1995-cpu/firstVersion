@@ -743,6 +743,7 @@ form button {
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
+  text-align: left;
 }
 
 /* Center CTA */
@@ -777,10 +778,14 @@ form button {
   text-align: right;
 }
 
+.footer-center {
+  text-align: center;
+}
+
 .footer-bottom {
 /*   border-top: 1px solid rgba(255,255,255,0.2); */
   padding-top: 20px;
-  text-align: center;
+/*   text-align: center; */
 }
 
 .footer-bottom p {
@@ -831,6 +836,10 @@ form button {
   }
   .footer-logo,
   .footer-cta {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-right {
     max-width: 100%;
     text-align: center;
   }
