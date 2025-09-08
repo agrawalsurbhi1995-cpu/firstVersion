@@ -28,7 +28,7 @@ body {
 
 .logo {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 70;
 }
 
 .nav-links {
@@ -644,7 +644,12 @@ form button {
   flex: 1;
   padding: 0 20px;
 }
-
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  
+}
 .footer-logo {
   width: 90px;
   margin-bottom: 15px;
@@ -681,12 +686,7 @@ form button {
   text-decoration: underline;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  
-}
+
 
 .social-icons {
   margin-top: 15px;
