@@ -845,4 +845,75 @@ form button {
   }
 }
 
+------------------------------
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #054569;
+  color: white;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center nav {
+  margin-top: 10px;
+}
+
+.footer-center nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-center nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+
+
 
