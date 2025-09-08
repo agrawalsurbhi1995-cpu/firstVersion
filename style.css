@@ -467,16 +467,7 @@ body {
   padding-top: 10px;
 }
 
-/* Responsive: stack vertically and hide connector line */
-@media (max-width: 900px){
-  .swiper-wrapper{
-    grid-template-columns:1fr;
-    gap:28px;
-  }
-  .swiper-wrapper::before{ display:none; }
-  .testimonial-card{ width:84px;height:84px; }
-/*   .icon{ width:42px;height:42px; } */
-}
+
 
 /* Swiper pagination dots */
 .swiper-pagination-bullet {
@@ -855,18 +846,16 @@ form button {
   background: #054569;
   color: white;
   padding: 40px 60px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* force single row */
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
+.footer-section {
   flex: 1;
-  min-width: 250px;
+  padding: 0 20px;
 }
 
 .footer-logo {
-  width: 100px;
+  width: 90px;
   margin-bottom: 15px;
 }
 
@@ -902,7 +891,7 @@ form button {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer {
     flex-direction: column;
     text-align: center;
@@ -914,6 +903,3 @@ form button {
     margin: 15px 0;
   }
 }
-
-
-
