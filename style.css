@@ -302,16 +302,19 @@ body {
 }
 
 ----------------------
-/* test Testimonials Section */
+/*  Testimonials Section */
     .reviews-section {
       text-align: center;
       padding: 40px 20px;
     }
 
-    .reviews-section h2 {
-      color: orange;
-      margin-bottom: 30px;
-    }
+    
+
+.reviews-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff914d;
+}
 
     .reviews-container {
       display: flex;
@@ -355,48 +358,6 @@ body {
       }
     }
 
-/* Testimonials Section */
-.testimonials {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #ff914d;
-}
-
-
-.swiper {
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-.swiper-wrapper {
-  display: flex;
-  gap:20px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  height: auto;
-}
-
-
-/* Testimonial Card */
-.testimonial-card {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-  padding: 25px;
-  width: 100%;
-  max-width: 380px;
-  text-align: left;
-}
-
 .user-info {
   display: flex;
   align-items: center;
@@ -427,32 +388,6 @@ body {
   margin-left: 8px;
 }
 
-.review {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.city {
-  font-size: 14px;
-  color: #666;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
-}
-
-
-
-/* Swiper pagination dots */
-.swiper-pagination-bullet {
-  background: #004466;
-  opacity: 0.5;
-}
-
-.swiper-pagination-bullet-active {
-  background: #ff6600;
-  opacity: 1;
-}
 
 .how-it-works {
   text-align: center;
