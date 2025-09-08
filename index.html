@@ -409,35 +409,72 @@
   
  <!-- Footer -->
   <!-- FOOTER -->
-<footer class="footer">
-  <!-- Left -->
-  <div class="footer-left">
-    <img src="logo.png" alt="Zupaws Logo" class="footer-logo">
-    <p><strong>Zupaws - Pet healthcare at home</strong></p>
-    <p>India’s First Full-Stack At-Home Pet Care Platform</p>
-    <p>No waiting, no travel, no hassle!</p>
-    <p>Pet care, the way it should be.</p>
-  </div>
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #054569;
+  color: white;
+  padding: 40px 60px;
+  flex-wrap: nowrap;   /* force single row */
+}
 
-  <!-- Center -->
-  <div class="footer-center">
-    <p>©2025 Zupaws Pvt. Ltd.</p>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Why Choose Us</a>
-      <a href="#">Services</a>
-      <a href="#">Pricing</a>
-      <a href="#">FAQs</a>
-    </nav>
-  </div>
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
 
-  <!-- Right -->
-  <div class="footer-right">
-    <p><strong>Email:</strong> <a href="mailto:nikhil.m@zupaws.in">nikhil.m@zupaws.in</a></p>
-    <p><strong>Phone:</strong> <a href="tel:7982690813">7982690813</a></p>
-    <p><strong>Address:</strong> Sector 57, Gurugram, Haryana, India</p>
-  </div>
-</footer>
+.footer-logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center nav {
+  margin-top: 10px;
+}
+
+.footer-center nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-center nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+
 
 <!-- Footer Section -->
 <footer id="footers" class="footer">
