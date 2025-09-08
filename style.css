@@ -301,6 +301,59 @@ body {
   border: 4px solid #024e3d;
 }
 
+----------------------
+/* test Testimonials Section */
+    .reviews-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .reviews-section h2 {
+      color: orange;
+      margin-bottom: 30px;
+    }
+
+    .reviews-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .review-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      width: 300px;
+      text-align: left;
+      flex: 1;
+      max-width: 350px;
+    }
+
+    .review-card h3 {
+      margin: 10px 0;
+    }
+
+    .review-card p {
+      color: #333;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .review-footer {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    /* 📱 Mobile Responsive */
+    @media (max-width: 768px) {
+      .reviews-container {
+        flex-direction: column; /* stack cards */
+        align-items: center;
+      }
+    }
 
 /* Testimonials Section */
 .testimonials {
