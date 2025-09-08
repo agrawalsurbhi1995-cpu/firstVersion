@@ -467,6 +467,17 @@ body {
   padding-top: 10px;
 }
 
+/* Responsive: stack vertically and hide connector line */
+@media (max-width: 900px){
+  .swiper-wrapper{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .swiper-wrapper::before{ display:none; }
+  .testimonial-card{ width:84px;height:84px; }
+/*   .icon{ width:42px;height:42px; } */
+}
+
 /* Swiper pagination dots */
 .swiper-pagination-bullet {
   background: #004466;
