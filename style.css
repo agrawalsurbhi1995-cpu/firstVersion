@@ -622,21 +622,21 @@ form button {
 
 /* Footer */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+/*   display: flex; */
+/*   justify-content: space-between; */
+  align-items: center;
   background: #054569;
   color: white;
   padding: 40px 60px;
-  flex-wrap: nowrap;   
+/*   flex-wrap: nowrap;    */
 }
 
-.footer-grid {
+/* .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   text-align: center;
-}
+} */
 .footer-logo {
   width: 90px;
   margin-bottom: 15px;
