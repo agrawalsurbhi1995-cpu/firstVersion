@@ -705,21 +705,20 @@ form button {
 */
 -----------------------------
 
-.cta-section {
-  padding: 60px 20px 0;
-  font-family: Arial, sans-serif;
-  color: white;
+.custom-footer {
   background-color: #014d48;
+  color: white;
   text-align: center;
+  padding: 60px 20px 40px;
 }
 
-.cta-content h2 {
+.custom-footer .cta-content h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.cta-btn {
+.custom-footer .cta-btn {
   background-color: #f9a825;
   color: white;
   font-size: 1rem;
@@ -729,61 +728,56 @@ form button {
   cursor: pointer;
 }
 
-.cta-btn:hover {
+.custom-footer .cta-btn:hover {
   background-color: #e69500;
 }
 
-.footer {
-  margin-top: 80px;
-  padding: 40px 20px;
+.custom-footer .footer-bottom {
+  margin-top: 60px;
 }
 
-.footer-left {
-  margin-bottom: 20px;
+.custom-footer .footer-logo {
+  width: 140px;
+  margin-bottom: 15px;
 }
 
-.footer-left img {
-  width: 150px;
-  margin-bottom: 10px;
-}
-
-.footer-left p {
+.custom-footer .footer-left p {
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 10px 0;
 }
 
-.footer-left span {
+.custom-footer .footer-left span {
   font-size: 0.8rem;
   color: #ddd;
 }
 
-.footer-links {
+.custom-footer .footer-links {
   margin: 20px 0;
 }
 
-.footer-links a {
+.custom-footer .footer-links a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
   font-size: 0.9rem;
 }
 
-.footer-links a:hover {
+.custom-footer .footer-links a:hover {
   text-decoration: underline;
 }
 
-.footer-social {
+.custom-footer .footer-social {
   margin-top: 20px;
 }
 
-.footer-social a {
+.custom-footer .footer-social a {
   color: white;
   margin: 0 10px;
   font-size: 1.3rem;
   transition: color 0.3s ease;
 }
 
-.footer-social a:hover {
+.custom-footer .footer-social a:hover {
   color: #f9a825;
 }
