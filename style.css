@@ -660,10 +660,14 @@ form button {
   text-decoration: underline;
 }
 
-/* .footer-right {
-  text-align: right;
+.footer-right {
+  text-align: center;
 }
- */
+
+.footer-cta {
+  text-align: center;
+}
+
 .footer-right a {
   color: #ff9800;
   text-decoration: none;
