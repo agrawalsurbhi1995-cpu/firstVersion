@@ -704,16 +704,13 @@ form button {
 }
 */
 -----------------------------
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #014d48; /* Dark green background */
-  color: white;
-  text-align: center;
-}
 
 .cta-section {
   padding: 60px 20px 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #014d48;
+  text-align: center;
 }
 
 .cta-content h2 {
